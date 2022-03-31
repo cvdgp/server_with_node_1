@@ -2,3 +2,57 @@ body{
     background: #333;
     color: ghostwhite;
 }
+a{
+    color:lightskyblue;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: #2a4853; 
+     
+}
+.header h1{ 
+    width: 30%;
+    font-size: 3em;
+    margin-left: 10px;
+    color:aqua;
+   
+}
+.header img{
+    margin: 15px;
+}
+h3{
+    color: lightskyblue;
+}
+
+.cont_code{
+
+    background-color: #000;
+    color: lightslategrey;
+    max-width: 50%;
+    max-height: 200px;
+    overflow: auto;
+   
+   
+
+}
+
+.cont_code::-webkit-scrollbar {
+    width: 19px;               /* width of the entire scrollbar */
+  }
+  
+ .cont_code::-webkit-scrollbar-track {
+    background: #666;        /* color of the tracking area */
+    
+}
+  
+ .cont_code::-webkit-scrollbar-thumb {
+    background-color: black;    /* color of the scroll thumb */
+    
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 7px solid #666;  /* creates padding around scroll thumb */
+
+}
+  .cont_code::-webkit-scrollbar-button {
+    height: 5px;
+  }

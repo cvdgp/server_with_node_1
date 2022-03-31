@@ -11,10 +11,13 @@
         <title>Mi hiha </title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="assents/css/main.css">
-    </head>
+    </head >
     <body>
-        <header>
-            <h1>Mi Encabezado</h1>
+        <header class="header">
+            <div>
+                <img src="assents/img/img_node_150x150.png" alt="Imagen del logo de node js">
+            </div>
+            <h1> APUNTES NODE JS</h1>
         </header>
         <main>
             <artcle>
@@ -22,11 +25,59 @@
                     <h2>Encabezado articulo</h2>
                 </header>
                 <main>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veniam iusto placeat, impedit similique neque atque voluptatem. Doloremque dolore esse facilis mollitia nisi, quis ipsam cupiditate assumenda eius, maxime libero?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, enim ad asperiores amet odio ut consequatur sit, maiores laboriosam dolore facere voluptatem itaque quod exercitationem magnam excepturi architecto dolores molestias.</p>
+                    <h2>Comandos Node.js</h2>
+                    <h3>confirmarmar que esta instalado</h3>
+                    <pre><code>node --version</code></pre>
+                    <h3>Consultar lo que regresa nuestro archivo js por consola </h3>
+                    <pre><code>node nombre_archivo.js</code></pre>
+                    <h3>Exportar funciones de un archivo js</h3>
+                    <div class="cont_code">
+                        <pre><code>
+const  sumar        =       (a,b)   => a+b;
+const  restar       =       (a,b)   => a-b;
+const  dividir      =       (a,b)   => a/b;
+const  multiplicar  =       (a,b)   => a*b;
+                                                    
+                                                    
+                                                    
+exports.sumar = sumar; 
+exports.restar = restar; 
+exports.dividir = dividir; 
+exports.multiplicar = multiplicar; 
+                        </code></pre>
+                    </div>
+                    <h3>Exportar un modulo</h3>
+                    <p> Utilizaremos la palabra reservada <code>module.export = </code> y el nombre de nuestro objeto o función.</p>
+                    <div class="cont_code">
+                        <pre><code>
+
+const math = {};
+
+const  sumar        =       (a,b)   => a+b;
+const  restar       =       (a,b)   => a-b;
+const  dividir      =       (a,b)   => a/b;
+const  multiplicar  =       (a,b)   => a*b;
+                            
+                            
+                            
+math.sumar = sumar; 
+math.restar = restar; 
+math.dividir = dividir; 
+math.multiplicar = multiplicar; 
+                            
+module.export = math;
+                        </code></pre>
+                    </div>
+                    <h3>Importar archivos de otro js</h3>
+                    <pre><code>const myVar = require("./nombre_archivo.js")</code></pre>
+                    <h3>Importar modulos nativos de node js</h3>
+                    <p>Si accedemos a <a href="https://nodejs.org/en/docs/"  target="black">la documentacion de node</a> Podremos ver soluciones testadas por la comunidad para realizar determinadas tareas. Para importar uno de estos módulos :</p>
+                    <pre><code>const os = require("os");</code></pre>
+
                 </main>
             </artcle>
         </main>
         <footer>cvdgp <br>dagipa@hotmail.es</footer>    
     </body>
+    <script src="assents/js/index.js"></script>
 </html>
