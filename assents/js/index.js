@@ -1,4 +1,5 @@
 const math = require("./main.js");
+
 /* Modulo http para conexion a servidor*/
 const http = require(`http`)
 const os = require("os");
